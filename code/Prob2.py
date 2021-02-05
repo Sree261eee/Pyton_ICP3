@@ -9,7 +9,7 @@ rows = soup.find_all('a')
 print(rows)
 my_data_file = open('wikidata.txt', 'w')
 for link in rows:
-       filtered_data = link.get('href')
+    filtered_data = link.get('href')
     print(filtered_data)
     my_data_file.write(str(filtered_data))
     my_data_file.write("\n")
